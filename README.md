@@ -1,7 +1,7 @@
 # DailyHeart
 灵感来自我今天早上抽风想给锁屏整个一言，不过问了D老师说不行，然后就有了这个<br>
 一个由PowerShell驱动的每日一言<br>
-![预览](https://github.com/Ae2autumn/DailyHeart/blob/main/jp%2039.png?raw=true "预览")
+![预览](https://github.com/Ae2autumn/DailyHeart/blob/main/jp%2039.png?raw=true "预览")<br>
 调用BurntToast来显示Toast通知<br>
 直接下载代码就行了，运行Install.ps1之后根据提示操作，卸载时会清除残留和修改，绿色无污染！<br>
 你可以在config.json中更改一些参数
