@@ -1,5 +1,11 @@
-﻿[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+﻿$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+Set-Location -Path $scriptDir
+
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 chcp 65001 | Out-Null
+
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+Set-Location -Path $scriptDir
 
 # 读取配置文件
 $config = Get-Content "$PSScriptRoot./config.json" | ConvertFrom-Json
@@ -23,7 +29,7 @@ try {
     else {
         # 正常获取一言内容
         $response = Invoke-RestMethod -Uri $ApiUrl -ErrorAction Stop
-        $message = $response.hitokoto
+        $message = $response.hitokoto #  + " -" + $response.from(添加源)
         New-BurntToastNotification -Text $Title, $message, Signature:`n$Signature -AppLogo $LogoPath
     }
 }
