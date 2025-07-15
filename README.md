@@ -11,4 +11,6 @@
 有问题请在Issues中留言，有空会回<br>
 （如果出了什么问题可以先试试替换一下目录中两个脚本的名称，wintoast.ps1调用的是原生的Toast，效果更好，不过用不了图）<br>
 虽然知道很基础，但这是我的第一个项目，整整花了我17个小时呢......<br>
-话说有了D老师和Copilot的帮助，效率还是挺高的
+话说有了D老师和Copilot的帮助，效率还是挺高的<br>
+#附上安装图
+![预览](https://github.com/Ae2autumn/DailyHeart/blob/main/jp%2034.png?raw=true "预览")
